@@ -19,6 +19,9 @@ public class SmartAppliancesFacade
     private final TV tv;
     private final AirCondition airCondition;
 
+    /**
+     * Instantiates a new Smart appliances facade.
+     */
     public SmartAppliancesFacade()
     {
         light = new Light();
@@ -26,6 +29,11 @@ public class SmartAppliancesFacade
         airCondition = new AirCondition();
     }
 
+    /**
+     * Say.
+     *
+     * @param message the message
+     */
     public void say(String message)
     {
         assert message != null;
